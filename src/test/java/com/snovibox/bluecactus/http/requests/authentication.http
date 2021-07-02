@@ -1,0 +1,33 @@
+GET http://localhost:8080/api/employes/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxLGJhbGlha2FAZ21haWwuY29tIiwiaXNzIjoiY29tLnNub3ZpYm94IiwiaWF0IjoxNjI1MjE4MTYwLCJleHAiOjE2MjU4MjI5NjB9.Qdw8lGybBhyOBj6bWh_wCgOdOAXQou3QeowvlxulTD3Ve-OSwb6BP8Gd6trWnRdhs9A4Nun67ugMNmRcYvjxeQ
+Accept: application/json
+
+###
+# curl --location --request GET 'http://localhost:8080/api/employes'
+#--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxLGJhbGlha2FAZ21haWwuY29tIiwiaXNzIjoiY29tLnNub3ZpYm94IiwiaWF0IjoxNjI1MjE4MTYwLCJleHAiOjE2MjU4MjI5NjB9.Qdw8lGybBhyOBj6bWh_wCgOdOAXQou3QeowvlxulTD3Ve-OSwb6BP8Gd6trWnRdhs9A4Nun67ugMNmRcYvjxeQ'
+GET http://localhost:8080/api/employes
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxLGJhbGlha2FAZ21haWwuY29tIiwiaXNzIjoiY29tLnNub3ZpYm94IiwiaWF0IjoxNjI1MjE4MTYwLCJleHAiOjE2MjU4MjI5NjB9.Qdw8lGybBhyOBj6bWh_wCgOdOAXQou3QeowvlxulTD3Ve-OSwb6BP8Gd6trWnRdhs9A4Nun67ugMNmRcYvjxeQ
+
+###
+POST http://localhost:8080/api/public/signup
+Content-Type: application/json
+
+{
+  "username": "baliaka@gmail.com",
+  "password": "baliaka",
+  "confirmation": "baliaka"
+}
+
+###
+POST http://localhost:8080/api/public/signin
+Content-Type: application/json
+
+{
+  "username": "baliaka@gmail.com",
+  "password": "baliaka"
+}
+
+###
+
+
+
