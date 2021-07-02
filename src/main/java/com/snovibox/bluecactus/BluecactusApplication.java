@@ -14,13 +14,13 @@ public class BluecactusApplication {
         SpringApplication.run(BluecactusApplication.class, args);
     }
 
-//    @Bean
-//    public WebMvcConfigurer corsConfigurer() {
-//        return new WebMvcConfigurerAdapter() {
-//            @Override
-//            public void addCorsMappings(CorsRegistry registry) {
-//                registry.addMapping("/**").allowedOrigins("http://localhost:4200/**").allowedMethods("GET","POST","DELETE","PUT","OPTIONS");
-//            }
-//        };
-//    }
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurerAdapter() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**").allowedOrigins("http://localhost:4200").allowedMethods("GET","POST","DELETE","PUT","OPTIONS").allowedHeaders("*");
+            }
+        };
+    }
 }
