@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/employes")
+@CrossOrigin
 @AllArgsConstructor
 public class EmployeController {
 
